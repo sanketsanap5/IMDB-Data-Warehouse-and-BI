@@ -1,0 +1,154 @@
+{
+  "itemId" : "_kOOFYCpYEeqCztBd_KmGCw",
+  "contextList" : [ {
+    "contextName" : "LOC",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_IesskRQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_IesskhQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_IesskxQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_IesslBQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_IesslRQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_IesslhQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_IesslxQDEeuLR-lMc9lxEA",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "PRD",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAsROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAshOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAsxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYAtBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYAtROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAthOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYAtxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "DEV",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAqROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAqhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAqxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYArBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYArROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYArhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYArxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "TST",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAwROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAwhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAwxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYAxBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYAxROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAxhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYAxxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "SBX",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAuROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAuhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAuxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYAvBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYAvROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAvhOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYAvxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAoROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAohOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAoxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYApBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYApROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAphOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYApxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  } ]
+}

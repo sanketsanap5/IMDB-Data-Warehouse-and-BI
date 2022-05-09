@@ -1,0 +1,29 @@
+{
+  "itemId" : "_-2bNEMUbEeykv8iKviUObQ",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_13fWQMTmEeykv8iKviUObQ",
+    "parameterList" : [ {
+      "id" : "_15tj0cTmEeykv8iKviUObQ",
+      "name" : "Login"
+    }, {
+      "id" : "_15tj0sTmEeykv8iKviUObQ",
+      "name" : "Password"
+    }, {
+      "id" : "_15tj08TmEeykv8iKviUObQ",
+      "name" : "Server"
+    }, {
+      "id" : "_15tj1MTmEeykv8iKviUObQ",
+      "name" : "Port"
+    }, {
+      "id" : "_15tj1cTmEeykv8iKviUObQ",
+      "name" : "Database"
+    }, {
+      "id" : "_15tj1sTmEeykv8iKviUObQ",
+      "name" : "Schema"
+    }, {
+      "id" : "_EMV8n8TnEeykv8iKviUObQ",
+      "name" : "Additional_parameter"
+    } ]
+  } ]
+}

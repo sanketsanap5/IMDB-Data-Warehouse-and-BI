@@ -1,0 +1,29 @@
+{
+  "itemId" : "_TKXEQMglEey1kPsvrL7o7A",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAoROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAohOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAoxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYApBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYApROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAphOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYApxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  } ]
+}

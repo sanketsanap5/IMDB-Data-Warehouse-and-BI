@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.4">
+  <Nodes>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="173" y="52" width="597" height="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>stg_imdb_title_principals</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="198" y="102" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>False</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>title_principals.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="tconst" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+                <Field name="ordering" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+                <Field name="nconst" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+                <Field name="category" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+                <Field name="job" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+                <Field name="characters" size="254" source="File: E:\DAMG\Advanced Data Architecture for BI\OneDrive Files\Project_IMDB\Project - imdb\data_imdb_datasets\imdb_tsv_files\title_principals.tsv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="366" y="101" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="366" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="tconst" selected="True" type="V_WString" size="10" />
+                <SelectField field="ordering" selected="True" type="V_WString" size="3" />
+                <SelectField field="nconst" selected="True" type="V_WString" size="10" />
+                <SelectField field="category" selected="True" type="V_WString" size="19" />
+                <SelectField field="job" selected="True" />
+                <SelectField field="characters" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="498" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="IF [tconst] == &quot;\N&quot; or IsNull([tconst]) OR  &#xA;IsEmpty([tconst])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [tconst] ENDIF" field="tconst" size="10" type="V_WString" />
+                <FormulaField expression="IF [ordering] == &quot;\N&quot; or IsNull([ordering]) OR  &#xA;IsEmpty([ordering])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [ordering] ENDIF" field="ordering" size="3" type="V_WString" />
+                <FormulaField expression="IF [nconst] == &quot;\N&quot; or IsNull([nconst]) OR  &#xA;IsEmpty([nconst])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [nconst] ENDIF" field="nconst" size="10" type="V_WString" />
+                <FormulaField expression="IF [category] == &quot;\N&quot; or IsNull([category]) OR  &#xA;IsEmpty([category])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [category] ENDIF" field="category" size="19" type="V_WString" />
+                <FormulaField expression="IF [job] == &quot;\N&quot; or IsNull([job]) OR  &#xA;IsEmpty([job])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [job] ENDIF" field="job" size="254" type="V_String" />
+                <FormulaField expression="IF [characters] == &quot;\N&quot; or IsNull([characters]) OR  &#xA;IsEmpty([characters])&#xA;THEN &quot;Unknown&quot; &#xA;ELSE [characters] ENDIF" field="characters" size="254" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>tconst = IF [tconst] == "\N" or IsNull([tconst]) OR  
+IsEmpty([tconst])
+THEN "Un...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="642" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>
+              </TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="642" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:IMDB_Staging|||dbo.stg_imdb_title_principals</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <AppendMap>
+                  <AppendMapping mode="Custom">
+                    <Field Source="tconst" Dest="tconst" />
+                    <Field Source="ordering" Dest="ordering" />
+                    <Field Source="nconst" Dest="nconst" />
+                    <Field Source="category" Dest="category" />
+                    <Field Source="job" Dest="job" />
+                    <Field Source="characters" Dest="characters" />
+                  </AppendMapping>
+                </AppendMap>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:IMDB_Staging
+Query=dbo.stg_imdb_title_principal...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>stg_imdb_title_principals</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ea820aec-fd27-4d5c-8958-6676c0862b71" />
+      <Telemetry>
+        <PreviousWorkflowId value="04988bc0-bd49-4cb0-87f4-397e3a059428" />
+        <OriginWorkflowId value="04988bc0-bd49-4cb0-87f4-397e3a059428" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

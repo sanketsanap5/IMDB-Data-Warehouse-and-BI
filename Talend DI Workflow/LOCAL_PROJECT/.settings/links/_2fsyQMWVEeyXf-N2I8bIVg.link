@@ -1,0 +1,104 @@
+{
+  "itemId" : "_2fsyQMWVEeyXf-N2I8bIVg",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_13fWQMTmEeykv8iKviUObQ",
+    "parameterList" : [ {
+      "id" : "_15tj0cTmEeykv8iKviUObQ",
+      "name" : "Login"
+    }, {
+      "id" : "_15tj0sTmEeykv8iKviUObQ",
+      "name" : "Password"
+    }, {
+      "id" : "_15tj08TmEeykv8iKviUObQ",
+      "name" : "Server"
+    }, {
+      "id" : "_15tj1MTmEeykv8iKviUObQ",
+      "name" : "Port"
+    }, {
+      "id" : "_15tj1cTmEeykv8iKviUObQ",
+      "name" : "Database"
+    }, {
+      "id" : "_15tj1sTmEeykv8iKviUObQ",
+      "name" : "Schema"
+    }, {
+      "id" : "_EMV8n8TnEeykv8iKviUObQ",
+      "name" : "Additional_parameter"
+    } ]
+  }, {
+    "contextName" : "Default",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAoROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAohOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAoxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYApBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYApROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAphOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYApxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  }, {
+    "contextName" : "DI",
+    "repoId" : "_13fWQMTmEeykv8iKviUObQ",
+    "parameterList" : [ {
+      "id" : "_15tj0cTmEeykv8iKviUObQ",
+      "name" : "Login"
+    }, {
+      "id" : "_15tj0sTmEeykv8iKviUObQ",
+      "name" : "Password"
+    }, {
+      "id" : "_15tj08TmEeykv8iKviUObQ",
+      "name" : "Server"
+    }, {
+      "id" : "_15tj1MTmEeykv8iKviUObQ",
+      "name" : "Port"
+    }, {
+      "id" : "_15tj1cTmEeykv8iKviUObQ",
+      "name" : "Database"
+    }, {
+      "id" : "_15tj1sTmEeykv8iKviUObQ",
+      "name" : "Schema"
+    }, {
+      "id" : "_EMV8n8TnEeykv8iKviUObQ",
+      "name" : "Additional_parameter"
+    } ]
+  }, {
+    "contextName" : "DI",
+    "repoId" : "_3w0Z8PwDEemOBcAAdKZmSw",
+    "parameterList" : [ {
+      "id" : "_2MYAoROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Schema"
+    }, {
+      "id" : "_2MYAohOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Database"
+    }, {
+      "id" : "_2MYAoxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Login"
+    }, {
+      "id" : "_2MYApBOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Server"
+    }, {
+      "id" : "_2MYApROSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Port"
+    }, {
+      "id" : "_2MYAphOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_AdditionalParams"
+    }, {
+      "id" : "_2MYApxOSEeuOR9BhkZqqgw",
+      "name" : "DI_CNTL_Password"
+    } ]
+  } ]
+}
